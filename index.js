@@ -37,6 +37,10 @@
 // let fullName = getFullName("Kripal", "Shrestha", makeUpper);
 // console.log(fullName);
 
-const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+// const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
-array.forEach((element, index) => console.log(element, index));
+// array.forEach((element, index) => console.log(element, index));
+
+// // Ternary Operator
+// const age = 21;
+// console.log(age == 22 ? "Age is correct" : "age is not correct");
