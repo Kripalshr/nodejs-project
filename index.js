@@ -44,3 +44,27 @@
 // // Ternary Operator
 // const age = 21;
 // console.log(age == 22 ? "Age is correct" : "age is not correct");
+
+// let animal = {
+//     'name' : 'cow',
+//     'age' : 10,
+//     'color' : 'white'
+// }
+
+// let newAnimal = {};
+// newAnimal.name = 'Dog';
+// newAnimal.age = 12;
+// newAnimal.color = 'golden'
+
+// console.log(animal['color'])
+// console.log(newAnimal.age)
+
+let myIntro = {
+    f_name: 'Kripal',
+    l_name: 'Shrestha',
+    age: 20,
+    address: 'Kirtipur, Kathmandu',
+    phone: '9851085685'
+}
+
+console.log(myIntro.f_name);
