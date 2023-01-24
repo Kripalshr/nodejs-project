@@ -59,12 +59,52 @@
 // console.log(animal['color'])
 // console.log(newAnimal.age)
 
-let myIntro = {
-    f_name: 'Kripal',
-    l_name: 'Shrestha',
-    age: 20,
-    address: 'Kirtipur, Kathmandu',
-    phone: '9851085685'
+// let myIntro = {
+//     f_name: 'Kripal',
+//     l_name: 'Shrestha',
+//     age: 20,
+//     address: 'Kirtipur, Kathmandu',
+//     phone: '9851085685'
+// }
+
+// delete myIntro.l_name
+// console.log(Object.key(myIntro));
+
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10]
+// const result = numbers.filter(function(element) {
+//     return element <= 5;
+// })
+
+// console.log(result);
+
+
+let promise1 = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Hello');
+        }, 1000)
+    })
 }
 
-console.log(myIntro.f_name);
+let promise2 = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Hello');
+        }, 2000)
+    })
+}
+const resultFunction = async () => {
+    try {
+        // let promise1Value = await promise1();
+        // let promise2Value = await promise2();
+        let [promise1Value, promise2Value] = await Promise.all([
+            promise1(),
+            promise2()
+        ])
+        console.log(promise1Value, promise2Value)
+    } catch(error){
+        console.log(error)
+    }
+};
+resultFunction();
